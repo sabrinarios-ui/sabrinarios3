@@ -18,7 +18,7 @@ body {
 	   vertical-align: baseline;
      background-color: #fdfdfd;
      height: auto;
-     padding: 0;
+     padding: 10px 10px;
      }
 
 section {
@@ -52,25 +52,24 @@ h1 {
     gap: 10px;
     font-size: 20px;
     word-spacing: 10px;
-    height: 128px;
     background-color: #f6c4b6;
     flex-shrink: 0;
     align-self: stretch;
-    padding-top: 50px; /* More padding on top */
-    padding-bottom: 0%; /* Less padding on the bottom */
+    padding: 20px 0; /* More padding on top */
   
 }  
 .profilepicture
   {
     display:flex;
-    padding: 20px 200px;
+    padding: 20px;
   }
   .profilepicture img 
   {
    /* width:auto;*/
     max-width: 450px;
     height: auto;
-    
+    display:block;
+    height: 664.172px;
 
    } 
    /*this is my container for my picture*/

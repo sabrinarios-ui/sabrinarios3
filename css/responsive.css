@@ -6,25 +6,23 @@
   }
     .nav-container{
             font-size: 18px; 
-            padding-top: 40px; /* Adjust padding on top */
-            padding-bottom: 10px; /* Add more padding on the bottom */
+            padding: 10px 0; /* Add more padding on the bottom */
             gap: 8px; /* Slightly smaller gap */
           }
-    .profilepicture {
-            flex-direction: row; /* Keep the image and text side by side */
-            padding: 20px 100px; /* Reduce the padding for tablets */
+          .profilepicture {
+            flex-direction: column; /* Stack the image and text vertically */
+            padding: 20px; /* Adjust padding for smaller screens */
           }
         
-    .profilepicture img {
-            max-width: 350px; /* Adjust image size for tablets */
-            height: auto; /* Maintain aspect ratio */
+          .profilepicture img {
+            max-width: 100%; /* Make the image take up the full width of the container */
+            height: auto; /* Keep the image proportionate */
           }
         
-    .aboutme {
-            padding: 20px; /* Reduce padding for tablets */
-            text-align: left; /* Align the text to the left */
+          .aboutme {
+            padding: 20px; /* Adjust padding for smaller screens */
+            text-align: left; /* Center the text */
             font-size: medium;
-            
           }
             /* Gallery title */
     .gallery-tittle {
@@ -73,22 +71,7 @@
           .skills-container {
             width: 100%;
           }
-      
-      .profilepicture {
-        flex-direction: column; /* Stack the image and text vertically */
-        padding: 20px; /* Adjust padding for smaller screens */
-      }
     
-      .profilepicture img {
-        max-width: 100%; /* Make the image take up the full width of the container */
-        height: auto; /* Keep the image proportionate */
-      }
-    
-      .aboutme {
-        padding: 20px; /* Adjust padding for smaller screens */
-        text-align: center; /* Center the text */
-        font-size: small;
-      }
       .button-section {
         padding: 16px;  /* Adjust padding for mobile */
         text-align: center;
