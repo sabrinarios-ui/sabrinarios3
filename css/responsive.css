@@ -1,164 +1,187 @@
 /* TABLET VIEW */
-@media only screen and (max-width:992px) {
+@media only screen and (max-width: 992px) {
 
   .skills-container {
     width: 50%;
   }
-    .nav-container{
-            font-size: 18px; 
-            padding: 10px 0; /* Add more padding on the bottom */
-            gap: 8px; /* Slightly smaller gap */
-          }
-          .profilepicture {
-            flex-direction: column; /* Stack the image and text vertically */
-            padding: 20px; /* Adjust padding for smaller screens */
-          }
-        
-          .profilepicture img {
-            max-width: 100%; /* Make the image take up the full width of the container */
-            height: auto; /* Keep the image proportionate */
-          }
-        
-          .aboutme {
-            padding: 20px; /* Adjust padding for smaller screens */
-            text-align: left; /* Center the text */
-            font-size: medium;
-          }
-            /* Gallery title */
-    .gallery-tittle {
-           font-size: 1.2em; /* Adjust title font size for smaller screens */
-           margin-bottom: 20px; /* Reduce margin for better spacing */
+
+  .nav-container {
+    font-size: 18px;
+    padding: 10px 0;
+    gap: 8px;
+    background-color: #f6c4b6;
+    position: relative;
   }
 
-  /* Gallery container (grid) */
-    .gallery-container {
-           display: grid;
-           grid-template-columns: repeat(2, 1fr); /* Display 2 images per row */
-           gap: 15px; /* Reduce the gap between images */
-           justify-items: center; /* Center the images in each grid cell */
-           align-items: center;
+  /* Hamburger icon */
+  .hamburger {
+    display: block; /* Ensure the hamburger icon is visible */
+    font-size: 30px;
+    color: #003366;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 101;
   }
 
-  /* Image item */
-    .image-item {
-           width: 100%; /* Let images fill their grid cell */
-           height: auto; /* Maintain aspect ratio */
-           max-width: 432px; /* Prevent images from exceeding the maximum width */
-           max-height: 468px; /* Prevent images from becoming too tall */
-           object-fit: cover; /* Crop images to maintain their aspect ratio */
-           border-radius: 8px;
+  /* Mobile navigation links */
+  #nav-links {
+    display: none; /* Hide by default */
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 100;
   }
 
-  /* Gallery images container */
-  .gallery-container img {
-           padding: 15px; /* Reduce padding around images */
+  /* Show navigation links when active */
+  #nav-links.active {
+    display: flex;
   }
-    
-        }
-    .faq-header{ font: size 20px; ;}
 
+  /* Profile section */
+  .profilepicture {
+    flex-direction: column;
+    padding: 20px;
+  }
 
+  .profilepicture img {
+    max-width: 100%;
+    height: auto;
+  }
 
-/* MOBILE VIEW */
-@media only screen and (max-width: 478px) {
-    .nav-container {
-        background-color: #f6c4b6; /* Keep the background color */
-          }
-        
-    .nav-container * {
-            display: none;
-          }
-          .skills-container {
-            width: 100%;
-          }
-    
-      .button-section {
-        padding: 16px;  /* Adjust padding for mobile */
-        text-align: center;
-        display: grid;
-        grid-template-columns: 1fr; /* Single column layout */
-        grid-template-rows: auto; /* Adjust the rows based on content */
-        grid-gap: 11px; /* Add space between buttons */
-      }
-    
-      .button-container {
-        padding: 16px;  /* Adjust padding for mobile */
-        background: #6c5ca0;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        grid-template-columns: minmax(var(--grid-gutter, 6vw), 1fr);
-        grid-template-rows: auto;
-      }
-    .skills-tittle
-    { font-size: 12pt;
-    }
-  /* Gallery title */
+  .aboutme {
+    padding: 20px;
+    text-align: left;
+    font-size: medium;
+  }
+
+  /* Gallery styles */
   .gallery-tittle {
-    font-size: 1.1em; /* Adjust title font size for smaller screens */
-    margin-bottom: 20px; /* Reduce margin for better spacing */
+    font-size: 1.2em;
+    margin-bottom: 20px;
   }
 
-  /* Gallery container (grid) */
   .gallery-container {
     display: grid;
-    grid-template-columns: 1fr; /* Stack images in one column */
-    gap: 10px; /* Reduce the gap between images */
-    justify-items: center; /* Center the images in each grid cell */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
     align-items: center;
   }
 
-  /* Image item */
   .image-item {
-    width: 100%; /* Let images fill the container */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 432px; /* Prevent images from exceeding the max width */
-    max-height: 468px; /* Prevent images from becoming too tall */
-    object-fit: cover; /* Crop images to maintain their aspect ratio */
+    width: 100%;
+    height: auto;
+    max-width: 432px;
+    max-height: 468px;
+    object-fit: cover;
     border-radius: 8px;
   }
 
-  /* Gallery images container */
   .gallery-container img {
-    padding: 10px; /* Adjust padding for smaller screens */
+    padding: 15px;
   }
-  
-  /* FAQ Container Adjustments */
-  .faq-container {
-    padding: 20px; /* Reduce padding on smaller screens */
+
+  .faq-header {
+    font-size: 20px;
+  }
 }
 
-/* FAQ Header (Title) */
-.faq-header {
-    font-size: 18pt; /* Adjust title font size for phones */
+
+@media only screen and (max-width: 478px) {
+
+  .nav-container {
+    background-color: #f6c4b6;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 30px;
+    color: #003366;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 101;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 100;
+  }
+
+  #nav-links.active {
+    display: flex;
+  }
+
+  .button-section,
+  .button-container {
+    padding: 16px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
+
+  .skills-tittle {
+    font-size: 12pt;
+  }
+
+  .gallery-tittle {
+    font-size: 1.1em;
     margin-bottom: 20px;
-}
+  }
 
-/* FAQ Question Text */
-.faq-question {
-    font-size: 12px; /* Smaller font size for questions on phones */
-    line-height: 18px; /* Adjust line height */
-}
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+  }
 
-/* FAQ Answer Text */
-.faq-answer {
-    font-size: 12px; /* Smaller font size for answers on phones */
-    line-height: 18px; /* Adjust line height */
-}
+  .image-item {
+    width: 100%;
+    height: auto;
+    max-width: 432px;
+    max-height: 468px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
 
-/* FAQ Item Adjustments */
-.faq-item {
+  .faq-container {
+    padding: 20px;
+  }
+
+  .faq-header {
+    font-size: 18pt;
+    margin-bottom: 20px;
+  }
+
+  .faq-question,
+  .faq-answer {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .faq-item {
+    width: 100%;
     padding-left: 10px;
     padding-right: 10px;
+  }
 }
-
-/* FAQ Item Container (reducing padding to fit on smaller screens) */
-.faq-item {
-    width: 100%; /* Make sure FAQ items are responsive */
-    padding-left: 10px;
-    padding-right: 10px;
-}
-    }
-
-  

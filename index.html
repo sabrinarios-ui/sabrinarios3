@@ -10,18 +10,22 @@
   <link rel="stylesheet" href="css/responsive.css">
 <body>
  
-
-<nav class="nav-container">
-<div class="container">
-  <a href="#home">Home</a>
-  <a href="#aboutme" class="no-spacing">About Me</a>
-  <a href="#container-skills">Skills</a>
-  <a href="#gallery-container">Gallery</a>
-  <a href="#faq-container">Faq</a>
-  <a href="#c">Contact</a> <!--is not required yet-->
-</div>
-
-</nav>
+  <nav class="nav-container">
+   
+  
+    <!-- Hamburger Icon -->
+    <div id="hamburger" class="hamburger">☰</div>
+  
+    <!-- Desktop Navigation -->
+    <ul id="nav-links" class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#aboutme" class="no-spacing">About Me</a></li>
+      <li><a href="#container-skills">Skills</a></li>
+      <li><a href="#gallery-container">Gallery</a></li>
+      <li><a href="#faq-container">FAQ</a></li>
+      <li><a href="#c">Contact</a></li>
+    </ul>
+  </nav>
 
 <!-- MAIN HEADER --> 
   <section id="header" class="header">
@@ -145,40 +149,46 @@
 <!-- FAQ SECTION -->
  <!-- FAQ Header --> 
  
- <section id="faq-container">
- <div class="faq-header"><h1>FAQS</h1></div> 
- <div class="faq-container"> 
-  <!-- FAQ Items --> 
-   <div class="faq-item">
-   <div class="faq-question"> 
-    What was your favorite class you took at SDSU? </div> 
-  <div class="faq-answer"> My favorite classes at SDSU were Experimental Typography and UX Design.
-     Experimental Typography allowed me to explore the creative possibilities of type, 
-     while UX Design taught me how to design with the user in mind,focusing on intuitive and engaging 
-     experiences. Both courses have greatly influenced my design approach.  </div>
-  </div> <div 
-  class="faq-item"> 
-  <div class="faq-question"> What do you have planned for after graduation? </div> 
-  <div class="faq-answer"> After graduation, I plan to work in the UX Design field, and in my free time,
-     I’ll focus on freelance design projects. This will allow me to gain more experience and expand my portfolio 
-     while continuing to grow in the UX Design industry. 
-  </div> </div> 
-  <div class="faq-item"> <div class="faq-question"> What work are you most proud of producing at SDSU? 
-  </div> <div class="faq-answer"> The work I’m most proud of producing at SDSU is from my Experimental Typography class. 
-    I experimented with different materials and worked in analog, which allowed me to push the boundaries of traditional 
-    typography and explore creative, tactile design approaches. It was a great opportunity to break out of digital tools 
-    and focus on hands-on, innovative methods.
- </div> </div> 
-  <div class="faq-item"> <div class="faq-question"> When will you be graduating from SDSU? 
-  </div> <div
-   class="faq-answer"> I am graduating from SDSU in May 2025 with a degree in Art and Graphic Design, focusing 
-   on Web Design and UX/UI Design.
+ <!-- FAQ SECTION -->
+<section id="faq-container">
+  <div class="faq-header">
+    <h1>FAQS</h1>
+  </div>
 
+  <div class="faq-container">
+    <!-- FAQ Item 1 -->
+    <div class="faq-item">
+      <div class="faq-question">What was your favorite class you took at SDSU?</div>
+      <div class="faq-answer">
+        My favorite classes at SDSU were Experimental Typography and UX Design. Experimental Typography allowed me to explore the creative possibilities of type, while UX Design taught me how to design with the user in mind, focusing on intuitive and engaging experiences. Both courses have greatly influenced my design approach.
+      </div>
+    </div>
 
+    <!-- FAQ Item 2 -->
+    <div class="faq-item">
+      <div class="faq-question">What do you have planned for after graduation?</div>
+      <div class="faq-answer">
+        After graduation, I plan to work in the UX Design field, and in my free time, I’ll focus on freelance design projects. This will allow me to gain more experience and expand my portfolio while continuing to grow in the UX Design industry.
+      </div>
+    </div>
 
- 
-  </div> </div> 
-</div>
+    <!-- FAQ Item 3 -->
+    <div class="faq-item">
+      <div class="faq-question">What work are you most proud of producing at SDSU?</div>
+      <div class="faq-answer">
+        The work I’m most proud of producing at SDSU is from my Experimental Typography class. I experimented with different materials and worked in analog, which allowed me to push the boundaries of traditional typography and explore creative, tactile design approaches. It was a great opportunity to break out of digital tools and focus on hands-on, innovative methods.
+      </div>
+    </div>
+
+    <!-- FAQ Item 4 -->
+    <div class="faq-item">
+      <div class="faq-question">When will you be graduating from SDSU?</div>
+      <div class="faq-answer">
+        I am graduating from SDSU in May 2025 with a degree in Art and Graphic Design, focusing on Web Design and UX/UI Design.
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Footer Section --> 
  <div class="footer">
@@ -186,24 +196,35 @@
 <div class="footer-text"> 
 <p>© Sabrina Rios 2025</p>
  </div> 
-<!-- Icon Container --> 
- <div class="icon-container">
- <!-- First row of icons (existing ones)  
-  <div class="icon"> 
-    <img src="https://placehold.co/50x50" alt="Icon 1"class="icon-img" />
+ <title>Social Media Icons</title>
+
+   <!-- Link to Font Awesome for Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <!-- Link to External CSS File -->
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <!-- Container to hold the icons -->
+   <div class="social-icons">
+       <!-- Instagram Icon Link -->
+       <a href="https://www.instagram.com/yourusername" target="_blank">
+           <i class="fab fa-instagram instagram"></i>
+       </a>
+
+       <!-- LinkedIn Icon Link -->
+       <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+           <i class="fab fa-linkedin linkedin"></i>
+       </a>
    </div>
-    <div
-    class="icon"> 
-    <img src="https://placehold.co/50x50" alt="Icon 2" class="icon-img" /> 
-  </div> -->
-<!-- Second row of icons (Instagram and LinkedIn) --> 
- <div class="icon"> 
-  <img src="https://placehold.co/50x50?text=IG" alt="Instagram Icon"  class="icon-img" /> 
-</div>
- <div class="icon"> <img src="https://placehold.co/50x50?text=LI" alt="LinkedIn Icon" class="icon-img" /> 
-  </div>
- </div> 
-</div>
+
+  </a>
+
+</head>
+<body>
+
+
  
  
 
