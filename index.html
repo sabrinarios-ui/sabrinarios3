@@ -15,6 +15,13 @@
   
     <!-- Hamburger Icon -->
     <div id="hamburger" class="hamburger">☰</div>
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+
+
+
+    
   
     <!-- Desktop Navigation -->
     <ul id="nav-links" class="nav-links">
@@ -26,6 +33,13 @@
       <li><a href="#c">Contact</a></li>
     </ul>
   </nav>
+
+  <label class="theme-switch">
+    <input type="checkbox" id="theme-toggle" class="checkbox"/>
+    <span class="switch"></span>
+    <span class="label-text">Dark Mode</span>
+  </label>
+  
 
 <!-- MAIN HEADER --> 
   <section id="header" class="header">
@@ -44,11 +58,8 @@
           that inspire my creativity. I also spend time outdoors, surfing, and practicing yoga, which help keep me grounded 
           and further fuel my design thinking. I’m excited to continue growing as a designer and apply my skills to create user-friendly, 
           impactful experiences.</p>
-      
-    </div>
-  </section>
 
-  <!-- Button Section -->
+           <!-- Button Section -->
   <section class="button-section">
     <div class="button-container"> 
       <div class="button-text"> tell me more </div> 
@@ -56,6 +67,10 @@
     </section>
     <section>
     </section>
+      
+    </div>
+  </section>
+
 
    
  <!-- Quote Container -->
@@ -79,14 +94,15 @@
   <img class="image-item" src="images/kokotuca-3-flavors.png" /> <!-- image 8-->
   <img class="image-item" src="images/kokotuca-3-flavors.png" /> <!-- image 9 this need to be change, all images will be change at one point :) -->
 </div>
-<!-- this is botton view my entired -->
+<!-- this is botton view my entired
  <section class="button-section">
 <div class="button-container"> 
   <div class="button-text">View my Entire Portfolio</div> 
 </div> 
 </section>
 <section>
-</section>
+</section> -->
+<a href="gallery.html" class="button-container">See More</a>
 
 <!-- Skills Section -->
 <section id="container-skills">
@@ -97,47 +113,65 @@
 <div class="image-grid">
     <!-- Skill Item 1 -->
        <div class= "skills-container img">
-        <img class="skill-img" src="images/ai.png" alt="Skill 1">
+        <!--<img class="skill-img" src="images/ai.png" alt="Skill 1">-->
+        <img class="light-icon" src="images/ai.png">
+        <img class="dark-icon" src="images/ai dark mode.png">
       <p>ILUSTRATOR</p>
     </div>
     <!-- Skill Item 2 -->
       <div class="skills-container img">
-        <img class="skill-img" src="images/ps.png" alt="Skill 2">
+      <!---- <img class="skill-img" src="images/ps.png" alt="Skill 2">-->
+      <img class="light-icon" src="images/ps.png">
+      <img class="dark-icon" src="images/ps dark mode .png">
       <p>PHOTOSHOP</p>
     </div>
     <!-- Skill Item 3 -->
      <div class= "skills-container img">
-      <img class="skill-img" src="images/id.png" alt="Skill 3">
+      <!--<img class="skill-img" src="images/id.png" alt="Skill 3">-->
+      <img class="light-icon" src="images/id.png">
+      <img class="dark-icon" src="images/indesign dark mode 2.png">
       <p>INDESIGN</p>
     </div>
     <!-- Skill Item 4 -->
        <div class="skills-container img">
-        <img class="skill-img" src="images/figma 2.png" alt="Skill 4">
+       <!---- <img class="skill-img" src="images/figma 2.png" alt="Skill 4">-->
+       <img class="light-icon" src="images/figma 2.png">
+       <img class="dark-icon" src="images/figma dark mode.png">
       <p>FIGMA</p>
     </div>
     <!-- Skill Item 5 -->
      <div class="skills-container img">
-      <img class="skill-img" src="images/webflow.png" alt="Skill 5">
+     <!---- <img class="skill-img" src="images/webflow.png" alt="Skill 5">-->
+     <img class="light-icon" src="images/webflow.png">
+     <img class="dark-icon" src="images/webflow dark mode.png">
       <p>WEBFLOW</p>
     </div>
     <!-- Skill Item 6 -->
        <div class="skills-container img">
-        <img class="skill-img" src="images/problemsolving.png" alt="Skill 6">
+        <!--<img class="skill-img" src="images/problemsolving.png" alt="Skill 6">-->
+        <img class="light-icon" src="images/problemsolving.png">
+        <img class="dark-icon" src="images/communication dark mode.png">
       <p>TEAM WORK</p>
     </div>
     <!-- Skill Item 7 -->
        <div class="skills-container img">
-      <img class="skill-img" src="images/communiccation.png" alt="Skill 7">
+      <!--<img class="skill-img" src="images/communiccation.png" alt="Skill 7">-->
+      <img class="light-icon" src="images/communiccation.png">
+      <img class="dark-icon" src="images/communication dark mode.png">
       <p>COMMUNICATION</p>
     </div>
     <!-- Skill Item 8 -->
       <div class="skills-container img">
-       <img class="skill-img" src="images/create.png" alt="Skill 8">
+      <!---- <img class="skill-img" src="images/create.png" alt="Skill 8">-->
+       <img class="light-icon" src="images/create.png">
+       <img class="dark-icon" src="images/create dark mode.png">
       <p>PROBLEM SOLVING</p>
     </div>
     <!-- Skill Item 9 -->
     <div class="skills-container img">
-      <img class="skill-img" src="images/CURIOSITY.png" alt="Skill 9">
+    <!-- <img class="skill-img" src="images/CURIOSITY.png" alt="Skill 9">-->
+      <img class="light-icon" src="images/CURIOSITY.png">
+      <img class="dark-icon" src="images/curiosity dark mode.png">
      <p>CURIOSITY</p>
    </div>
   </div>
@@ -145,16 +179,22 @@
 </section>
 
 
-
 <!-- FAQ SECTION -->
  <!-- FAQ Header --> 
- 
+ <!--<div class="wave-section">
+  <h1>Hello Waves</h1>
+</div>
+
+<!-<svg class="wave" viewBox="0 0 1440 150" preserveAspectRatio="none">
+  <path d="M0,96L48,101.3C96,107,192,117,288,112C384,107,480,85,576,69.3C672,53,768,43,864,58.7C960,75,1056,117,1152,122.7C1248,128,1344,96,1392,80L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+    fill="#00aaff">
+  </path>
+</svg>-->
  <!-- FAQ SECTION -->
 <section id="faq-container">
   <div class="faq-header">
     <h1>FAQS</h1>
   </div>
-
   <div class="faq-container">
     <!-- FAQ Item 1 -->
     <div class="faq-item">
@@ -228,33 +268,7 @@
  
  
 
-<!--notes delete this 
- java script needs to be on responsive or his own page needs to be on the end of the page - before body and html. double check the console.log. [alert (hello world)} 
-notes - script alwayas need to know where to go - first document   - look in the document.getElemenyById("special".innerHTML="New message goes here";
- as you type you can documen.getElemenyByClassNamE("special").special.color("red");(rechecked the notes on css school) [professor add .red-text]
-get element byb tag by name by ID. semicolon when you finish your message;. 
-on <section add a class =special>
 
-  var paragraph=document.getElementByID("special");
-  paragraph.classlist.add(red-text)
-  Function is the thing tha specify what we want to file by setting function- add section on button button on click - 
-  Function changeText (){
-  var paragraph=docuemnt.getElementById("special"); go to the school how to add class- in function add the class name on the specific thing youb
-  want target like "id" .reveal menu {
-  display block !Important 
-  position absolute
-  top 50%
-  left 50%
-
-  }
-  function revealMenu(){ var menu=document.getElemenybyId ( "menu");
-  menu.classlist.toggle("revealMenu")
-
-  notes - work on padding - then do the quote -- fix it and take a look on the hello im sabrina maybe need to ba bigger 
-  - also differiencite the diff sections maybe with color -- 
-  }
-  }
--->
 <script src="js/script.js"></script>
 </body>
 </html>

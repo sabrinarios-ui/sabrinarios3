@@ -4,6 +4,14 @@
   .skills-container {
     width: 50%;
   }
+  @media (min-width: 768px) {
+    .nav-menu {
+      display: flex !important;
+      flex-direction: row;
+      position: static;
+      width: auto;
+    }
+  }
 
   .nav-container {
     font-size: 18px;
@@ -43,6 +51,33 @@
   #nav-links.active {
     display: flex;
   }
+  /*dark mode */
+  /* Dark Mode Styles for Mobile Navigation Links */
+body.dark-mode #nav-links {
+  display: none; /* Hide by default */
+  flex-direction: column;
+  background-color: #2c2c2c; /* Dark background for dark mode */
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 100;
+}
+
+body.dark-mode #nav-links.active {
+  display: flex;
+}
+
+body.dark-mode #nav-links a {
+  color: #e0e0e0; /* Light text color for links in dark mode */
+}
+
+body.dark-mode #nav-links a:hover {
+  color: #f0a500; /* Optional: Light hover color for links in dark mode */
+}
+
 
   /* Profile section */
   .profilepicture {
@@ -86,12 +121,35 @@
 
   .gallery-container img {
     padding: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .faq-header {
     font-size: 20px;
   }
+  .quote-container
+     {
+    background-color: #ffffff; /* Figma color review later */
+    color: #6D0B0D; /* White text color for contrast */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    width: 90%; /* Width of the container */
+    text-align: center; /* Center the text inside the container */
+  }
+  .aboutme      /*about me container*/
+  {
+    width: 90%;
+    padding: 50px;
+    color: #003366; /* Dark blue text color */}
 }
+
+.skills-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  
 
 
 @media only screen and (max-width: 478px) {

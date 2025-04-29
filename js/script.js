@@ -1,46 +1,86 @@
 // ✅ JavaScript
 document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
+  // Hamburger Menu Functionality
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
   
-    hamburger.addEventListener('click', function () {
-      navLinks.classList.toggle('active');
-    });
-  
-    // Close menu if you click outside
-    document.addEventListener('click', function (event) {
-      const isClickInsideMenu = navLinks.contains(event.target);
-      const isClickOnHamburger = hamburger.contains(event.target);
-  
-      if (!isClickInsideMenu && !isClickOnHamburger) {
-        navLinks.classList.remove('active');
-      }
-    });
-  });document.addEventListener("DOMContentLoaded", function () {
-    const faqQuestions = document.querySelectorAll(".faq-question");
-  
-    faqQuestions.forEach((question) => {
-      question.addEventListener("click", function () {
-        const answer = this.nextElementSibling;
-  
-        // Toggle visibility
-        if (answer.style.display === "block") {
-          answer.style.display = "none";
-        } else {
-          answer.style.display = "block";
-        }
-      });
+  // Open/close the menu when the hamburger is clicked
+  hamburger.addEventListener('click', function () {
+    navLinks.classList.toggle('active');
+  });
+
+  // Close the menu if clicking outside of it
+  document.addEventListener('click', function (event) {
+    const isClickInsideMenu = navLinks.contains(event.target);
+    const isClickOnHamburger = hamburger.contains(event.target);
+
+    if (!isClickInsideMenu && !isClickOnHamburger) {
+      navLinks.classList.remove('active');
+    }
+  });
+
+  // Close menu when a nav link is clicked
+  const navLinkItems = document.querySelectorAll('#nav-links a');
+  navLinkItems.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
     });
   });
-// Example: Add a click event listener to Instagram icon
-document.querySelector('.instagram').addEventListener('click', function () {
-    console.log('Instagram icon clicked!');
-});
 
-// Example: Add a click event listener to LinkedIn icon
-document.querySelector('.linkedin').addEventListener('click', function () {
+  // FAQ Toggle Functionality
+  const faqQuestions = document.querySelectorAll(".faq-question");
+  faqQuestions.forEach((question) => {
+    question.addEventListener("click", function () {
+      const answer = this.nextElementSibling;
+      // Toggle visibility
+      answer.style.display = answer.style.display === "block" ? "none" : "block";
+    });
+  });
+
+  // Social Media Click Events (for testing purposes)
+  document.querySelector('.instagram').addEventListener('click', function () {
+    console.log('Instagram icon clicked!');
+  });
+
+  document.querySelector('.linkedin').addEventListener('click', function () {
     console.log('LinkedIn icon clicked!');
+  });
+
+  // Dark/Light Mode Toggle Functionality
+  const themeToggleButton = document.getElementById('theme-toggle');
+  const body = document.body;
+
+ 
+
+  // Toggle dark/light mode on button click
+  themeToggleButton.addEventListener('click', function() {
+    body.classList.toggle('dark-mode');
+
+    // Save the current theme to localStorage
+    if (body.classList.contains('dark-mode')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+  
+  // Check if dark mode is saved in localStorage, if so, apply dark mode
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    themeToggleButton.checked = true; // set switch to "on"
+  } else {
+    body.classList.remove('dark-mode');
+    themeToggleButton.checked = false; // set switch to "off"
+  }
+    
 });
-  
-  
-  
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+  const icons = document.querySelectorAll('.theme-icon');
+  icons.forEach(img => {
+    const newSrc = document.body.classList.contains('dark-mode') 
+      ? img.getAttribute('data-dark') 
+      : img.getAttribute('data-light');
+    img.setAttribute('src', newSrc);
+  });
+}
