@@ -1,0 +1,496 @@
+/* CSS GOES HERE */
+html {
+     scroll-behavior: smooth;
+     font-family: Verdana, Geneva, Tahoma, Helvetica, sans-serif;
+}
+nav a {
+     color: #003366; /* Change text color to white */
+     font-weight: bold; /* Make text bold */
+     text-decoration: none; /* Remove underline */
+    
+}
+
+body {
+     margin: 0;
+	   border: 0;
+	   font-size: 100%;
+	   font: inherit;
+	   vertical-align: baseline;
+     background-color: #fdfdfd;
+     height: auto;
+     padding: 0;
+     }
+
+section {
+    width: auto;
+    height: auto;
+   /* padding: 60px 40px;*/
+}
+.container
+ {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+}
+h1 {
+    font-size: 3em;
+}
+ .no-spacing
+  {
+  word-spacing: 0;
+ }
+
+.nav-container /*this is nav container */
+{ 
+    display: flex;  
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    word-spacing: 10px;
+    height: 128px;
+    background-color: #f6c4b6;
+    flex-shrink: 0;
+    align-self: stretch;
+    padding-top: 50px; /* More padding on top */
+    padding-bottom: 0%; /* Less padding on the bottom */
+  
+}  
+.profilepicture
+  {
+    display:flex;
+    padding: 20px 100px;
+  }
+  .profilepicture img 
+  {
+   /* width:auto;*/
+    max-width:450px;
+  
+    width: 100%;
+    
+
+   } 
+   /*this is my container for my picture*/
+  .aboutme      /*about me container*/
+  {
+    width: 100%;
+    padding: 100px;
+    color: #003366; /* Dark blue text color */}
+    
+    /* this is for Quote Container */
+    .quote-container
+     {
+    background-color: #ffffff; /* Figma color review later */
+    color: #003366; /* White text color for contrast */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    width: 100%; /* Width of the container */
+    text-align: center; /* Center the text inside the container */
+  }
+
+  
+.gallery-tittle
+  {
+    font-size:medium;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    color: #003366;
+  }
+
+  .image-item { 
+    width: 432px;
+    height: 468px;
+    object-fit: cover; 
+    border-radius: 8px;
+  }
+  .gallery-container
+  { 
+      display: grid;
+      grid-template-columns: repeat(3,432px);
+      gap:10px;
+      justify-content: center;
+      align-items: center;
+  } 
+  .gallery-container img
+  {
+      display: grid; /* Enable grid layout */
+      grid-template-columns: repeat(3, 432px); /* 3 columns of 432px width */ 
+      gap: 20px; /* Space between the images */
+      justify-content: center; /* Center the grid horizontally */ 
+      background: white; /* Background color of the container */ 
+      padding: 20px; /* Optional padding around the grid */
+   }
+    
+/* General Styles for Skills Section */
+.container-skills {
+
+  grid-template-columns: repeat(4,width 226px);  /* 4 items per row */
+  gap: 30px; /* Space between items */
+  width: 450px; 
+  max-width: 900px; /* Max width to control the container */
+  padding: 82px 10px 82px 10px; /* Adjusted padding to reduce height */
+  margin: 0 auto;
+  background-color: #ffffff; /* White background */
+  box-sizing: border-box;
+  margin-bottom: 50px; /* Prevent it from touching FAQ */
+  justify-content: space-between;
+  flex-flow: row wrap;
+
+
+}
+
+.image-grid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:  30px 20px 30px 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid; /* Enable grid layout */
+  grid-template-columns: repeat(3, 432px);
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: 220px;
+  
+}
+
+.skills-tittle
+  {
+      font-size:medium;
+      font-weight: bold;
+      text-align: center;
+      color: #003366;
+    }
+/* Adjusted Image Sizing */
+.skill-img {
+  height: 150px; /* Reduced height of images*/
+  border-radius: 80%; /* Circular images */
+  object-fit: contain;
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+/* Text Styling */
+.skill-item p {
+  font-size: 16px;
+  color: #003366; /* Text color */
+  font-weight: bold;
+  width: 200px;
+  padding-top: 10px;
+}
+.underline-text {
+  text-decoration: underline;
+  text-decoration-color: #f6c4b6; /* Change this to any color */
+}
+
+/* FAQ Container */
+.faq-container
+ {
+     width: auto;  
+     max-width: 1512px; 
+     height: auto;
+     padding: left 0;
+     padding-right: 100px;
+     padding-top: 40px;
+     padding-bottom: 40px;
+     padding-left: 100px;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     gap: 27px;
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0 auto;  /* Center the container */
+     
+ }
+
+/* FAQ Header */
+.faq-header
+ {
+     font-size:large;
+     margin-bottom: 30px;
+     border-radius: 8px;
+     font-weight: bold;
+     text-align: center;
+     color: #003366;
+
+}
+
+/* FAQ Item Container */
+.faq-item 
+{
+     width: 100%; /* Ensure the width is responsive */
+     max-width: 1014px;  /* Limit the max width */
+     padding-left: 180px;
+     padding-right: 180px;
+     padding-top: 14px;
+     padding-bottom: 14px;
+     position: relative;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     display: flex;
+     flex-direction: column; /* Stack the question and answer vertically */
+     background: #04798a;
+     margin-bottom: 20px; /* Space between FAQ items */
+     border-radius: 8px; /* Adds rounded corners for a softer look */
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a soft shadow */
+}
+
+/* FAQ Question Text */
+.faq-question
+ {
+     color: #D0EAF5;
+     font-size: 20px;
+     font-family: Roboto, sans-serif;
+     font-weight: 400;
+     line-height: 36px;
+     word-wrap: break-word;
+}
+
+/* FAQ Answer Text */ 
+.faq-answer 
+{ 
+     width: 100%; /* Make the answer div take the full width of the FAQ item */
+     color: #003366;
+     font-size: 18px; 
+     font-family: Roboto, sans-serif; 
+     line-height: 28px;
+     padding-top: 10px;
+     word-wrap: break-word;
+     background: #ffffff;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 15px;
+     margin-top: 10px;
+     border-radius: 5px;
+   } 
+   
+   /* Optional: Extra styling for FAQ Item*/
+.faq-item:not(:last-child)
+    {
+     margin-bottom: 20px; /* Adds space between FAQ  */
+ } 
+.faq-item {
+     width: 100%; 
+     padding-left: 20px; padding-right: 20px; 
+    }
+.faq-question { font-size: 22px; } .faq-answer { font-size: 16px; 
+  }
+  
+  /* Footer Container */ 
+.footer 
+  {
+     background: #f6c4b6; 
+     display: flex;
+     justify-content: space-between; 
+     align-items: center; 
+     padding: 20px 30px;
+ } 
+ /* Footer Text Styling (for Copyright) */
+.footer-text
+ { 
+     font-size: 16px; 
+     color: #fff; 
+     font-family: Arial, sans-serif; 
+     width: 100%; 
+ }
+  /* Icon Container (for Instagram and LinkedIn) */ 
+.icon-container
+ { 
+     display: flex; 
+     justify-content: flex-end;
+     align-items: center; 
+     gap: 20px; 
+}
+.icon
+ {
+     width: 50px; 
+     height: 50px;
+     background: #fff;
+     display: flex; 
+     justify-content: center;
+     align-items: center;
+     border-radius: 5px; 
+  /* Optional: Rounded corners for a soft look */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+ }
+
+
+/* Style for the button section */
+.button-section {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for the button container */
+.button-container {
+  padding: 24px 16px;
+  background: #6c5ca0; /* Background color */
+  font-size: 24px;
+  border-radius: 10px;
+  margin: 200px auto;
+  display: block;
+  max-width: 300px;
+  text-align: center;
+  color: #D0EAF5;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 300ms;
+  
+}
+
+  
+
+/* Button hover effect */
+.button-container:hover {
+  background: #6c5ca0; /* Lighter purple shade on hover */
+  cursor: crosshair; /* Change cursor to indicate clickable */
+}
+
+/* Optional: Hover effect for button text */
+.button-container:hover .button-text {
+  color:#f6c4b6; /* Change text color when hovered */
+}
+
+/* Optional: Additional button scale effect */
+.button-container:hover .button {
+  transform: scale(1.05); /* Slightly enlarge the button */
+  transition: transform 0.2s ease; /* Smooth scale transition */
+}
+.button:visited
+{
+background-color: #f6c4b6;
+}
+  
+
+#animated-header {
+  font-size: 45px;
+  font-family: Arial, sans-serif;
+  opacity: 0;
+  animation: fadeInAndGrow 3s forwards; /* make hi bigger*/
+}
+@keyframes fadeInAndGrow {
+  0% {
+    opacity: 0;
+    transform: scale(0.5); /* Start smaller */
+  }
+  50% {
+    opacity: 1; /* Full opacity halfway through */
+    transform: scale(1.5); /* Grow bigger */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Return to original size */
+  }
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+  align-items: start;
+}
+
+.portfolio-item {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #003366;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: auto;
+  color: #003366;
+}
+
+
+/* Divider Styling */
+.custom-divider {
+  border: none;
+  height: 3px; /* Increased thickness for visibility */
+  background-color: #003366; /* Navy blue */
+  margin: 40px auto;
+  width: 80%;
+  opacity: 1;
+  border-radius: 2px;
+}
+
+
+
+/* Lightbox container */
+.lightbox {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px; /* Space from the top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+  justify-content: center; /* Center the image */
+  align-items: center; /* Center the image */
+  text-align: center;
+}
+
+/* Lightbox image */
+.lightbox-img {
+  display: block;
+  margin: auto;
+  max-width: 90%; /* Maximum width */
+  max-height: 80vh; /* Maximum height to fit the screen */
+  box-shadow: 0 0 20px #fff; /* Optional white shadow */
+}
+
+/* Close button */
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lightbox .close:hover {
+  color: #bbb; /* Lighter color when hovering */
+}
+.image-item {
+  width: 432px;
+  height: 468px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer; /* Indicate that the image is clickable */
+  transition: border-color 0.3s ease;
+}
+
+/* On hover */
+.image-item:hover {
+  border-color: #888; /* Highlight border on hover */
+}
+
+/* When selected (clicked) */
+.image-item.selected {
+  border-color: #000; /* Black border for selected image */
+}

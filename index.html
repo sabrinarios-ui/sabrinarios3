@@ -6,8 +6,11 @@
   <meta name="author" content="Art 444 Student">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Welcome to my website!</title>
+
+  
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/responsive.css">
+  
 <body>
  
   <nav class="nav-container">
@@ -71,12 +74,20 @@
     </div>
   </section>
 
-
-   
  <!-- Quote Container -->
  <div class="quote-container">
   <p>"The only way to do great work is to love what you do."</p>
   <p class="author">- Steve Jobs</p>
+</div>
+
+
+   
+
+
+<!-- Fullscreen Image Viewer -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Expanded view">
 </div>
 <!-- GALLERY SECTION -->  
 <section id="gallery-container">
@@ -169,8 +180,8 @@
     </div>
     <!-- Skill Item 9 -->
     <div class="skills-container img">
-    <!-- <img class="skill-img" src="images/CURIOSITY.png" alt="Skill 9">-->
-      <img class="light-icon" src="images/CURIOSITY.png">
+    <!--<img class="skill-img" src="images/CURIOSITY.png" alt="Skill 9">-->
+    <img class="light-icon" src="images/CURIOSITY.png">
       <img class="dark-icon" src="images/curiosity dark mode.png">
      <p>CURIOSITY</p>
    </div>
@@ -179,17 +190,6 @@
 </section>
 
 
-<!-- FAQ SECTION -->
- <!-- FAQ Header --> 
- <!--<div class="wave-section">
-  <h1>Hello Waves</h1>
-</div>
-
-<!-<svg class="wave" viewBox="0 0 1440 150" preserveAspectRatio="none">
-  <path d="M0,96L48,101.3C96,107,192,117,288,112C384,107,480,85,576,69.3C672,53,768,43,864,58.7C960,75,1056,117,1152,122.7C1248,128,1344,96,1392,80L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-    fill="#00aaff">
-  </path>
-</svg>-->
  <!-- FAQ SECTION -->
 <section id="faq-container">
   <div class="faq-header">
@@ -230,6 +230,10 @@
   </div>
 </section>
 
+
+<div id="react-mount">
+
+
 <!-- Footer Section --> 
  <div class="footer">
  <!-- Copyright Text --> 
@@ -261,13 +265,10 @@
 
   </a>
 
-</head>
-<body>
 
 
  
  
-
 
 <script src="js/script.js"></script>
 </body>
